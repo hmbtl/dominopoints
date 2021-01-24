@@ -1,0 +1,281 @@
+body {
+  background: #414141;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.pinInput{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
+
+.customButton{
+  font-family: 'Amatic SC', cursive;
+  color: #fff;
+  font-size: 10vw;
+  background-color: transparent;
+}
+
+.customButton2{
+  border-radius: 100px;
+  color: transparent;
+  background-color: white;
+}
+
+/* Pages */
+
+.pages {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.page {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.login.page .form {
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.login.page .form .usernameInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+font-family: 'Amatic SC', cursive;
+  padding-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+  width: 400px;
+}
+
+#localGamePanel {
+  margin-top: 0px;
+  padding-top: 40px;
+}
+
+#localGamePanel .title {
+  font-size: 200%;
+  color: #fff;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+}
+
+#networkGamePanel .pin {
+  color: #fff;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+}
+
+#networkGamePanel {
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+#joinGamePanel {
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+#joinGamePanel .title {
+  font-size: 300%;
+  color: #fff;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+}
+
+#joinGamePanel .pinInput{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  font-family: 'Amatic SC', cursive;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 300%;
+  color: #fff;
+  font-weight: bold;
+  width: 50%;
+}
+
+
+#localGamePanel button {
+  padding-top: 0px;
+}
+
+.login.page .title {
+  font-size: 500%;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+}
+
+.login.page .usernameInput {
+  font-size: 200%;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.login.page .title, .login.page .usernameInput {
+  color: #fff;
+  font-weight: 100;
+}
+
+.titleText {
+  color: #000;
+  font-size:8vw;
+  font-family: 'Amatic SC', cursive;
+  padding: 5px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.mainButton {
+  margin: 0px;
+}
+.mainPages {
+  padding: 100px 0px;
+}
+
+.mainButton .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainButton .col button{
+  width: 80%;
+  margin: 6px;
+  padding: 12px;
+}
+
+.headBar {
+  background: #fff;
+  color: #000;
+  height: auto;
+  margin:0px;
+  padding: 10px 0px;
+  /* display: block; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  z-index: 100;
+}
+
+.headBar h2 {
+  font-size: 12vw;
+  font-family: 'Amatic SC', cursive;
+}
+
+.score .headBar {
+  position: fixed;
+}
+
+.titlePlace {
+  background: #fff;
+  color: #000;
+  height: auto;
+  margin:0px;
+  padding: 10px 0px;
+  position: fixed;
+  /* display: block; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  z-index: 100;
+}
+
+.footerBar {
+  background: #fff;
+  color: #000;
+  height: auto;
+  margin:0px;
+  padding: 5px 0px;
+  position: fixed;
+  bottom: 0;
+  /* display: block; */
+  width: 100%;
+  z-index: 100;
+}
+
+
+.hl {
+    border-top: 1px solid white;
+    width: : 100%;
+}
+
+
+.scoreSetRaw {
+  padding: 95px 0px;
+  margin:0px;
+}
+
+.scoreColumn {
+	margin : 0 auto;
+	padding : 0px;
+	display : flex;
+	flex-direction: column;
+}
+
+.scoreColumn img{
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+    padding: 5px 0px;
+    width:30%;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+     -moz-user-select: none;     /* Firefox all */
+     -ms-user-select: none;      /* IE 10+ */
+      user-select: none;          /* Likely future */
+}
+.titleColumn {
+	margin : 0 auto;
+	padding : 0px;
+	display : flex;
+	flex-direction: column;
+  justify-content: center;
+}
